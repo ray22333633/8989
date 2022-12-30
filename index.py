@@ -13,9 +13,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    homepage = "<h1>楊子青Firestore資料庫存取，提供webhook</h1>"
-    homepage += "<a href=/movie>讀取開眼電影即將上映影片，寫入Firestore</a><br><br>"
-    homepage += "<a href=/query>電影查詢</a><br>"
+    homepage = "<h1>張心睿的個人網頁</h1>"
+    homepage += "<a href=/movie>麥當勞菜單</a><br><br>"
+    homepage += "<a href=/query>菜單查詢</a><br>"
     return homepage
 
 @app.route("/webhook", methods=["POST"])
